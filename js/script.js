@@ -1,1 +1,1 @@
-alert('js is loaded')
+// alert('js is loaded')
