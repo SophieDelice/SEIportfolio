@@ -1,0 +1,29 @@
+/* nav{
+    display: flex;
+  
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+.logo{
+    font-size: 28px;
+    color: blue
+}
+
+span {
+    color: red;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+
+nav ul li a{
+    font-weight: bold;
+    text-decoration: none;
+}
