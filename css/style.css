@@ -1,4 +1,88 @@
+*{
+    padding:0;
+    margin: 0; 
+    box-sizing: border-box;
+}
 
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1{
+    display: block; 
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color:black;
+}
+
+#home h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+#home h1:nth-child(2) {
+    animation-delay: 2.5s;
+}
+#home h1:nth-child(3) {
+    animation-delay: 3.5s;
+}
+
+
+#home h1 span{
+    position: absolute; 
+    top:0;
+    left:0;
+    height: 100%;
+    width: 0;
+    background-color: beige;
+    animation: text_reveal_box 2s ease;
+    animation-delay:.3s;
+}
+#home h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#home h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+#home h1:nth-child(3) span{
+    animation-delay: 3s;
+}
+
+#home .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 36px;
+    transition: .5s ease; 
+    transition-property: background-color, color;
+}
+
+#home.btn:hover{
+    color: green; 
+    background-color: black;
+}
+
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left:0;
+    }
+    100%{
+        width: 0;
+        left: 100%
+    }
+}
+
+
+
+/* 
 .logo{
     font-size: 28px;
     color: blue
@@ -8,34 +92,40 @@ span {
     color: red;
 }
 
-nav ul li {
+nav ul li{
     list-style: none;
     display: inline-block;
-    padding: 10px 20px;
-
+    padding: 10px 20px; */
+/* 
 }
 
 nav ul li a{
     position: relative; 
     padding: 5px 0;
 
-}
+} */
 
 /* section{
     padding: 50pm 20px;
 } */
 
-.home {
+/* .home {
     position: fixed;
     width: 100%;
     min-height: 100vh;
     display:grid;
     grid-template-columns: 0.2fr 1fr 1fr;
-
-
 }
 
-.home-info{
+.button{
+    color:green;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px; 
+    border-radius: 500px;
+    display: inline-block; 
     font-weight: 500;
-}
-.home-info
+    background-size: 152% 100; 
+/* 
+} */ */ */
