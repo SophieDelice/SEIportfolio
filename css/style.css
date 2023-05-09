@@ -1,7 +1,35 @@
 *{
-    padding:0;
+    padding:0 auto;
     margin: 0; 
     box-sizing: border-box;
+}
+
+.navbar{
+    position: absolute;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .tab-links{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .tab-links ul {
+    display:flex;
+}
+
+.navbar .tab-links ul li {
+    display:flex;
+    margin:0 50px;
 }
 
 .container {
@@ -53,7 +81,7 @@
 
 #home .btn{
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 20px;
     color: black;
     background-color: transparent;
     border: 1px solid black;
@@ -80,6 +108,27 @@
     }
 }
 
+/* -------------------------------------------------------------------------- */
+
+/* about me styling start  */
+
+#about .about{
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+/* about me styling ends */
+
+
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+
 /* 
 projects styling start  */
 #projects .projects{
@@ -97,3 +146,6 @@ projects styling start  */
    
 }
 /* projects styling ends  */
+
+
+/* -------------------------------------------------------------------------- */
