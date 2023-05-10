@@ -16,14 +16,14 @@
 <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 
     <nav class="navbar">
-        <a href="#" class="logo"> Sophie Delice</a>
+        <a href="#homeid" class="logo"> Sophie Delice</a>
         <div class="tab-links">
             <ul>
-                <li class="nav-item"><a href=""> Home</a></li>
-                <li><a href=""> About Me </a></li>
-                <li><a href=""> Skills </a></li>
-                <li><a href=""> Projects </a></li>
-                <li><a href=""> Contact Me</a></li>
+                <li class="nav-item"><a href="#homeid"> Home</a></li>
+                <li><a href="#aboutid"> About Me </a></li>
+                <li><a href="#skillsid"> Skills </a></li>
+                <li><a href="#projectsid"> Projects </a></li>
+                <li><a href="#contactid"> Contact Me</a></li>
             </ul>
 
         </div>
@@ -32,7 +32,7 @@
     
 <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 <!-- home page start  -->
-<section class=" home-page">
+<section id="homeid" class="home-page">
     <div class="home-card">
         <h1> Hi, </h1>
         <h1> My Name is  Sophie </h1>
@@ -56,10 +56,11 @@
 <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- about page start  -->
-<section class="about-me">
+<h1 class="about-title"> About Me </h1>
+<section id="aboutid" class="about-me">
     <div class="about-card">
+        <h1></h1>
         <img src="" alt="Profile Picture">
-        <h1 class="section-title"> About Me </h1>
         <h2> Full Stack Developer </h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Ratione, commodi dolorum enim est laborum eaque? At similique reprehenderit qui porro voluptate molestias rem vero 
@@ -68,13 +69,36 @@
              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             
     </div>
 </section>
 <!-- about page ends  -->
 <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+<!-- 
+skills page start  -->
+
+<h1 class="skills-title"> My Skills </h1>
+<section id="skillsid" class="skills">
+
+    <div class="skills-card"> 
+        <h1> Skills </h1>
+    </div> 
+
+</section>
+
+<!-- skills page end  -->
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
 
 <!-- Projects Part Start  -->
-<section class="project-cards">
+<h1 class=" projects-title"> My Work </h1>
+
+<section id="projectsid" class="project-cards">
     <div class="card">
       <img src="project 1 .avif" alt="Project 1">
       <h3>Title: NASA Picture of the Day </h3>
@@ -82,7 +106,8 @@
         The browser page will display a new pictrure every day with a title of the image with a brief discription. </p>
         <h3>Technology Used:</h3> <p>- HTML - CSS - Javascript (JQuery & AJAX Functionality) </p>
 
-        
+        <a href="https://cool-swan-c8b74c.netlify.app/" target="_blank"> Project Card Link </a>
+
 
     </div>
     <div class="card">
@@ -90,6 +115,9 @@
       <h3>Title: Watchlist </h3>
       <p>Full CRUD app keeps track of tv shows and movies a user may want to watch later.</p>
       <h3>Technology Used:</h3> <p>- HTML - Noje.js - MongoDB - CSS </p>
+      
+      <a href="https://sophwatchlistapp.herokuapp.com/movies?category=Movie" target="_blank">Project Card Link</a>
+
 
     </div>
     <div class="card">
@@ -97,6 +125,9 @@
       <h3>Title : Password Safe </h3>
       <p> An app that allows users to store all their usernames and passwords of their streaming services in one place.</p>
       <h3>Technology Used:</h3> <p>- HTML - Noje.js - MongoDB - CSS </p>
+
+      <a href="https://passwordsafe-app.herokuapp.com/" target="_blank">Project Card Link</a>
+
 
     </div>
   </section>
@@ -107,7 +138,8 @@
 <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- Contact Me section start  -->
-<section class="contact-section">
+<section id="" class="contact-section">
+
     <h2>Contact Me</h2>
     <form id="contact-form">
       <label for="name">Name:</label>

@@ -20,11 +20,9 @@
       padding: 10px;
     }
   }
-
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
-
 
 .navbar{
 
@@ -87,12 +85,13 @@ nav ul li a {
     height: 100vh;
     text-align: center;
     margin: 0 auto;
-    padding: 100px 20px; 
-}
+    /* padding: 100px 20px;  */
+    padding: 25px 20px; 
+} 
 
 .home-card {
     width: 550px;
-    padding: 20px;
+    padding: 20px 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
     border-radius: 5px;
@@ -217,19 +216,26 @@ nav ul li a {
 /* -------------------------------------------------------------------------- */
 
 /* about me styling start  */
+
+.about-title {
+    text-align: center;
+    font-size: 50px;
+
+}
 .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
     margin: 0 auto;
-    padding: 100px 20px; 
+    padding: 25px 20px; 
+    
 }
 
 .about-card {
     width: 550px;
-    padding: 20px;
+    padding: 40px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
     border-radius: 5px;
@@ -265,13 +271,25 @@ nav ul li a {
 
 
 /* -------------------------------------------------------------------------- */
+ /* skills styling start  */
 
+ .skills-title {
+    text-align: center;
+    font-size: 50px;
+
+}
+
+ /* skills styling end  */
 
 /* -------------------------------------------------------------------------- */
 
 /* 
 projects styling start  */
 
+.projects-title{
+    text-align: center;
+    font-size: 60px;
+}
 
 .project-cards {
     display: flex;
@@ -292,7 +310,7 @@ projects styling start  */
   
   .card img {
     width: 100%;
-    height: auto;
+    height: 100;
   }
   
   .card h3 {
