@@ -3,10 +3,32 @@
     margin: 0; 
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+    nav {
+      padding: 0;
+    }
+    
+    ul {
+      flex-direction: column;
+    }
+    
+    li {
+      margin: 10px 0;
+    }
+    
+    a {
+      padding: 10px;
+    }
+  }
+
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
 
 .navbar{
 
-    background-color: rgb(128, 187, 128);
+    /* background-color: rgb(128, 187, 128); */
     height: 90px;
     display: flex;
     justify-content: space-between;
