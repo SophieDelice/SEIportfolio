@@ -5,17 +5,19 @@
 }
 
 .navbar{
-    position: absolute;
-    margin: 30px;
+
+    background-color: rgb(128, 187, 128);
+    height: 90px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
+    align-items: center;
 }
 
 .navbar .logo{
     font-size: 2em;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 .navbar .tab-links{
@@ -25,22 +27,105 @@
 
 .navbar .tab-links ul {
     display:flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
 }
 
 .navbar .tab-links ul li {
+    margin-right: 20px;
     display:flex;
     margin:0 50px;
+    color: white;
 }
 
+nav ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
+/* 
 .container {
     min-height: 100vh;
     width: 100%;
     display:flex;
     align-items: center;
     justify-content: center;
+} */
+
+/* -------------------------------------------------------------------------- */
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 20px; 
 }
 
-#home h1{
+.home-card {
+    width: 550px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    text-align: center;
+
+  }
+
+  .about-card h1 {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  } 
+
+  .home-card p {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+
+/* -------------------------------------------------------------------------- */
+
+.btn {
+    background-color:green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn:hover:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover:before {
+    width: 300px;
+    height: 300px;
+  }
+  
+/* #home h1{
     display: block; 
     width: fit-content;
     font-size: 5rem;
@@ -57,7 +142,6 @@
 #home h1:nth-child(3) {
     animation-delay: 3.5s;
 }
-
 
 #home h1 span{
     position: absolute; 
@@ -106,18 +190,55 @@
         width: 0;
         left: 100%
     }
-}
+} */
 
 /* -------------------------------------------------------------------------- */
 
 /* about me styling start  */
-
-#about .about{
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 100px 20px; 
 }
 
+.about-card {
+    width: 550px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    text-align: center;
+
+  }
+
+  .about-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .about-card h1 {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  } 
+  .about-card h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .about-card p {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
 /* about me styling ends */
 
 
@@ -128,32 +249,56 @@
 
 /* 
 projects styling start  */
-#projects .projects{
-    flex-direction: column;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
 
-#projects .allprojects{
+
+.project-cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-   
-}
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+   .card {
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+  }
+  
+  .card p {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 18px;
+  }
 /* projects styling ends  */
-
-
 /* -------------------------------------------------------------------------- */
+
+/* contact me styling start  */
+
 .contact-section {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(183, 219, 211);
+    background-color:green(183, 219, 211);
     box-shadow: 2px 1px 10px #ccc;
     border-radius: 30px;
     text-align: center;
+    box-shadow: 0 4px 8px 0 green(0, 0, 0, 0.9);
   }
   
   .contact-section h2 {
@@ -198,6 +343,7 @@ projects styling start  */
   }
   
   .contact-section button[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: green;
   }
   
+  /* contact me styling end */
