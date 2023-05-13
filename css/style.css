@@ -91,7 +91,7 @@ navbar styling ends  */
 .about-title {
   text-align: center;
   font-size: 60px;
-  padding: 5px;
+  padding: 12px;
 }
 
 .aboutme-content h1 {
@@ -108,12 +108,12 @@ navbar styling ends  */
   font-size: 26px;
   padding: 65px;
   min-height: 50vh;
-  text-align: center;
 }
 
 .about-card img {
   width: 600px;
   height: 400px;
+  padding: 8px;
   object-fit: cover;
   margin: 0 auto;
   box-shadow: 0 10px 15px 0 purple;
@@ -133,10 +133,21 @@ navbar styling ends  */
 
 .skills-title {
   text-align: center;
-  font-size: 50px;
-  height: 100vh;
+  font-size: 60px;
+  /* height: 100vh; */
+  padding: 40px;
 }
 
+.skills-icons {
+  text-align: center;
+}
+
+.skills-icons a i {
+  font-size: 70px;
+  margin-right: 25px;
+  padding: 60px;
+
+}
 /* skills styling end  */
 
 /* -------------------------------------------------------------------------- */
