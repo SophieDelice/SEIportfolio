@@ -33,7 +33,8 @@
 
 .tab-links ul li:hover {
   text-decoration: underline;
-  text-decoration-color: green;
+  text-decoration-color: purple;
+  box-shadow: 0 10px 16px 0 purple;
 }
 
 a {
@@ -143,28 +144,78 @@ navbar styling ends  */
 }
 
 .skills-icons a i {
-  font-size: 70px;
+  font-size: 50px;
   margin-right: 25px;
   padding: 60px;
 
+}
+
+.button {
+  font-size: 30px;
+  display: inline-block;
+  background: rgb(159, 33, 159);
+  color: white;
+  padding: 15px;
+  border: 5px;
+  box-shadow: 0 10px 15px 0 purple;
+}
+
+.button i {
+  padding: 5px;
+  margin-right: 8px;
 }
 /* skills styling end  */
 
 /* -------------------------------------------------------------------------- */
 
-/* 
-projects styling start  */
+/* resume styling starts  */
+
+.resume-title {
+  text-align: center;
+  font-size: 60px;
+  /* height: 100vh; */
+  padding: 40px;
+  min-height: 20vh;
+}
+
+/* resume styling ends */
+
+/* -------------------------------------------------------------------------- */
+
+/* projects styling start  */
 
 .projects-title {
   text-align: center;
   font-size: 60px;
-  height: 100vh;
+  padding: 40px;
 }
 
-.project-cards {
+/* .project-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+} */
+
+.cards-wrapper{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards-wrapper img {
+  width: 350px;
+  margin-bottom:10px;
+}
+
+.cards-wrapper .card {
+  margin: 10px;
+  text-align: center;
+  border: 2px solid purple;
+  box-shadow: 0 10px 15px 0 purple;
+}
+
+.cards-wrapper .card h3 , p {
+  margin-bottom: 10px;
 }
 
 .card {
@@ -178,11 +229,6 @@ projects styling start  */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card img {
-  width: 100%;
-  height: 100;
-}
-
 .card h3 {
   text-align: center;
   padding: 10px;
@@ -191,17 +237,24 @@ projects styling start  */
 
 .card p {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 10px;
   font-size: 18px;
+} 
+
+.cards-icons {
+  font-size: 55px;
+
 }
 
 /* projects styling ends  */
 /* -------------------------------------------------------------------------- */
 
+
+
 /* contact me styling start  */
 
-.contact-section {
+/* .contact-section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
@@ -257,6 +310,6 @@ projects styling start  */
 
 .contact-section button[type="submit"]:hover {
   background-color: green;
-}
+} */
 
 /* contact me styling end */
