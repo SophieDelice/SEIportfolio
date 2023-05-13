@@ -1,200 +1,251 @@
+
 * {
-border:1px solid red; 
-/* background-color: black; */
+  margin: 0 ;
+  padding: 0;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+/* navbar styling start  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px purple solid;
+  padding : 35px 0;
+  min-height: 10vh;
 }
 
-.tab-links ul{
-  display:flex;
+.tab-links ul {
+  display: flex;
   list-style: none;
 }
 
 .logo {
-  font-size:20px;
+  font-size: 20px;
   color: black;
 }
 
-.tab-links ul li{
-  margin-right: 100px; 
-  
+.tab-links ul li {
+  margin-right: 100px;
+
+}
+
+.tab-links ul li:hover {
+  text-decoration: underline;
+  text-decoration-color: green;
 }
 
 a {
   text-decoration: none;
 }
 
-.tab-links a { 
+span{
+  color: purple;
+}
+.tab-links a {
   font-size: 20px;
   color: black;
 }
 
-/* -------------------------------------------------------------------------- */
-
-.home-text{
-    padding: 300px 120px;
-    margin-top: 20px;
-    font-size: 30px;
-    height: 100vh;
-}
-
-.home-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-
-}
+/* 
+navbar styling ends  */
 
 /* -------------------------------------------------------------------------- */
-.about-title{
-    text-align: center;
-    font-size: 60px;
+
+/* home styling starts  */
+
+.home-text {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
 }
 
-.about-me p{
-    margin-top: 20px;
-    font-size: 30px;
-    padding: 5px;
-    height: 100vh;
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.home-text h1 {
+  margin-bottom: 10px;
+}
+
+.home-text p{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.home-icons i {
+  font-size: 37px;
+
+}
+/* home styling ends */
+
+/* -------------------------------------------------------------------------- */
+
+/* about me styling starts  */
+
+
+.about-title {
+  text-align: center;
+  font-size: 60px;
+  padding: 5px;
+}
+
+.aboutme-content h1 {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.about-card {
+  display: flex;
+ }
+
+.about-me p {
+  margin-top: 20px;
+  font-size: 26px;
+  padding: 65px;
+  min-height: 50vh;
+  text-align: center;
 }
 
 .about-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto;
-  }
-
-  .skills-title{
-    text-align: center;
-    font-size: 60px;
-    height: 100vh;
-  }
-
-
-/* -------------------------------------------------------------------------- */
-
-
-/* -------------------------------------------------------------------------- */
- /* skills styling start  */
-
- .skills-title{
-    text-align: center;
-    font-size: 50px;
-    height: 100vh;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 0 10px 15px 0 purple;
 }
 
- /* skills styling end  */
+.about-card p {
+  margin-right: 75px;
+  word-spacing: 5px;
+}
+
+/* about me styling ends */
+
+/* -------------------------------------------------------------------------- */
+
+
+/* skills styling start  */
+
+.skills-title {
+  text-align: center;
+  font-size: 50px;
+  height: 100vh;
+}
+
+/* skills styling end  */
 
 /* -------------------------------------------------------------------------- */
 
 /* 
 projects styling start  */
 
-.projects-title{
-    text-align: center;
-    font-size: 60px;
-    height: 100vh;
+.projects-title {
+  text-align: center;
+  font-size: 60px;
+  height: 100vh;
 }
 
 .project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-   .card {
-    width: 30%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-    transition: 0.3s;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100;
-  }
-  
-  .card h3 {
-    text-align: center;
-    padding: 10px;
-    font-size: 24px;
-  }
-  
-  .card p {
-    text-align: center;
-    margin-top: 50px;
-    padding: 10px;
-    font-size: 18px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100;
+}
+
+.card h3 {
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.card p {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 18px;
+}
+
 /* projects styling ends  */
 /* -------------------------------------------------------------------------- */
 
 /* contact me styling start  */
 
 .contact-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color:green(183, 219, 211);
-    box-shadow: 2px 1px 10px #ccc;
-    border-radius: 30px;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 green(0, 0, 0, 0.9);
-  }
-  
-  .contact-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    height: 100vh;
-  }
-  
-  .contact-section form {
-    display: inline-block;
-    text-align: left;s
-  }
-  
-  .contact-section label {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .contact-section input[type="text"],
-  .contact-section input[type="email"],
-  .contact-section textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 3px 2px 6px rgb(7, 118, 29);
-  }
-  
-  .contact-section textarea {
-    height: 150px;
-  }
-  
-  .contact-section button[type="submit"] {
-    background-color: #031e03;
-    color: #fff;
-    padding: 10px 20px;
-    border:none;
-    border-radius: 26px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .contact-section button[type="submit"]:hover {
-    background-color: green;
-  }
-  
-  /* contact me styling end */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: green(183, 219, 211);
+  box-shadow: 2px 1px 10px #ccc;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 green(0, 0, 0, 0.9);
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  height: 100vh;
+}
+
+.contact-section form {
+  display: inline-block;
+  text-align: left;
+  s
+}
+
+.contact-section label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 2px 6px rgb(7, 118, 29);
+}
+
+.contact-section textarea {
+  height: 150px;
+}
+
+.contact-section button[type="submit"] {
+  background-color: #031e03;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-section button[type="submit"]:hover {
+  background-color: green;
+}
+
+/* contact me styling end */
