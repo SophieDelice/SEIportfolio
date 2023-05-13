@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <head> 
+        <title>Night and Day Effect</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- <button onclick="toggleMode()">Toggle Day/Night</button> -->
+
+     </head> 
+
     <script src="./js/script.js"></script>
 
     <title> Sophie's Portfolio </title>
@@ -19,7 +27,7 @@
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-        <a href="#homeid" class="logo"> Portfolio </a>
+        <a href="#homeid" class="logo"> Sophie <span> Delice</span></a>
         <div class="tab-links">
             <ul>
                 <li class="nav-item"><a href="#homeid"> Home</a></li>
@@ -29,6 +37,18 @@
                 <li><a href="#projectsid"> Projects </a></li>
                 <li><a href="#contactid"> Contact Me</a></li>
             </ul>
+        </div>
+
+        <div class ="button-con"> 
+            <label for="cb1"> 
+                <i class='bx bxs-moon' style='color:purple' id=" nightIcon"></i>
+            </label>
+            <input type="checkbox" name="" id="cb1" class="toggle" />
+            <label for="cb1" class="toggle-button"></label>
+            <label for="cb1">
+                <i class='bx bxs-sun' style='color:#6d14bf' id="dayIcon"></i>
+            </label>
+
         </div>
     </nav>
 
@@ -42,7 +62,7 @@
         <div class="container">
             <div class="home-text">
 
-                <h1> Hi, I am Sophie <span> Delice</span></h1>
+                <h1> Hi, I am <span> Sophie <span></h1>
                 <p> Enthusiastic, full-stack software developer with a background in Education.
                 <p>
 
@@ -76,7 +96,7 @@
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
 
-                    <img src="https://images.unsplash.com/photo-1544847558-3ccacb31ee7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE4MjY3M30"
+                    <img src="Pr.png"
                         alt="Profile Picture">
                 </div>
             </div>
@@ -204,12 +224,13 @@
     <!-- Projects Part Ends  -->
 
 
-    <!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
 
     <!-- Contact Me section start  -->
-    <section id="" class="contact-section">
+    <section id="contactid" class="contact-section">
 
-        <h2>Contact Me</h2>
+        <h1 class = "contact-title"><span> Contact </span> Me</h1>
+        <div class="form-section"> 
         <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -219,9 +240,12 @@
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+    </div>
     </section>
 
     <!-- Contact Me section ends  -->
+
+     <!-- ---------------------------------------------------------------------------------------------------------------- -->
 
 </body>
 

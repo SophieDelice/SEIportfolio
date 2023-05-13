@@ -4,6 +4,22 @@
   padding: 0;
 }
 
+.button-con{
+  cursor: default;
+  /* position: absolute; */
+  margin-right: 50px;
+}
+
+#dayIcon, 
+#nightIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  top:-3px;
+  margin: 0 7px;
+
+}
+
 
 /* navbar styling start  */
 
@@ -22,13 +38,13 @@
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 50px;
   color: black;
+  font-weight: bold;
 }
 
 .tab-links ul li {
   margin-right: 100px;
-
 }
 
 .tab-links ul li:hover {
@@ -45,7 +61,7 @@ span{
   color: purple;
 }
 .tab-links a {
-  font-size: 20px;
+  font-size: 26px;
   color: black;
 }
 
@@ -123,6 +139,7 @@ navbar styling ends  */
 .about-card p {
   margin-right: 75px;
   word-spacing: 5px;
+  min-height: 90vh;
 }
 
 /* about me styling ends */
@@ -147,7 +164,6 @@ navbar styling ends  */
   font-size: 50px;
   margin-right: 25px;
   padding: 60px;
-
 }
 
 .button {
@@ -187,7 +203,7 @@ navbar styling ends  */
 .projects-title {
   text-align: center;
   font-size: 60px;
-  padding: 40px;
+  padding: 100px;
 }
 
 /* .project-cards {
@@ -205,6 +221,7 @@ navbar styling ends  */
 .cards-wrapper img {
   width: 350px;
   margin-bottom:10px;
+
 }
 
 .cards-wrapper .card {
@@ -254,27 +271,27 @@ navbar styling ends  */
 
 /* contact me styling start  */
 
-/* .contact-section {
-  max-width: 1000px;
+ .form-section{
+  width: 1000px;
   margin: 0 auto;
   padding: 20px;
   background-color: green(183, 219, 211);
   box-shadow: 2px 1px 10px #ccc;
   border-radius: 30px;
   text-align: center;
-  box-shadow: 0 4px 8px 0 green(0, 0, 0, 0.9);
-}
-
-.contact-section h2 {
-  font-size: 32px;
+  box-shadow: 0 4px 8px 0 green(0, 0, 0, 0.9); */
+ }
+.contact-section h1 {
   margin-bottom: 20px;
-  height: 100vh;
+  height: 5vh;
+  text-align: center;
+  font-size: 60px;
+  padding: 80px;
 }
 
 .contact-section form {
   display: inline-block;
   text-align: left;
-  s
 }
 
 .contact-section label {
@@ -291,7 +308,7 @@ navbar styling ends  */
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
-  box-shadow: 3px 2px 6px rgb(7, 118, 29);
+  box-shadow: 3px 2px 6px purple;
 }
 
 .contact-section textarea {
@@ -309,7 +326,7 @@ navbar styling ends  */
 }
 
 .contact-section button[type="submit"]:hover {
-  background-color: green;
+  background-color: purple;
 } */
 
 /* contact me styling end */
