@@ -1,69 +1,36 @@
-*{
-    padding:0 auto;
-    margin: 0; 
-    box-sizing: border-box;
+* {
+border:1px solid red; 
+/* background-color: black; */
 }
 
-@media (max-width: 768px) {
-    nav {
-      padding: 0;
-    }
-    
-    ul {
-      flex-direction: column;
-    }
-    
-    li {
-      margin: 10px 0;
-    }
-    
-    a {
-      padding: 10px;
-    }
-  }
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-
 .navbar{
-    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar .logo{
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+
+.tab-links ul{
+  display:flex;
+  list-style: none;
 }
 
- .navbar .tab-links{
-    display: flex;
-    align-items: center;
+.logo {
+  font-size:20px;
+  color: black;
 }
 
- .navbar .tab-links ul {
-    display:flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-
+.tab-links ul li{
+  margin-right: 100px; 
+  
 }
 
-.navbar .tab-links ul li {
-    margin-right: 20px;
-    display:flex;
-    margin:0 50px;
-    color: white;
-} 
+a {
+  text-decoration: none;
+}
 
-nav ul li a {
-    display: block; 
-    color: black; 
-    text-decoration: none;
-    padding: 10px;
+.tab-links a { 
+  font-size: 20px;
+  color: black;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -72,6 +39,7 @@ nav ul li a {
     padding: 300px 120px;
     margin-top: 20px;
     font-size: 30px;
+    height: 100vh;
 }
 
 .home-text h1{
@@ -90,158 +58,10 @@ nav ul li a {
     margin-top: 20px;
     font-size: 30px;
     padding: 5px;
-}
-/* 
-.home-page {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    text-align: center;
-    margin: 0 auto; */
-    /* padding: 100px 20px;  */
-    /* padding: 25px 20px;  */
-} 
-
-/* .home-card {
-    /* width: 550px;
-    padding: 20px 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
-    border-radius: 5px;
-    text-align: center; */
-
-  } 
-
-/* -------------------------------------------------------------------------- */
-
- 
-
-  /* .home-card p {
-    font-size: 17px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 32px;
-  }  */
-
-/* -------------------------------------------------------------------------- */
-
-/* .btn {
-    background-color:green;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .btn:hover:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 100%;
-    z-index: -1;
-    transition: all 0.3s ease;
-  }
-  
-  .btn:hover:before {
-    width: 300px;
-    height: 300px;
-  } */
-  
-/* #home h1{
-    display: block; 
-    width: fit-content;
-    font-size: 5rem;
-    position: relative;
-    color:black;
 }
 
-#home h1:nth-child(1) {
-    animation-delay: 1.5s;
-}
-#home h1:nth-child(2) {
-    animation-delay: 2.5s;
-}
-#home h1:nth-child(3) {
-    animation-delay: 3.5s;
-}
-
-#home h1 span{
-    position: absolute; 
-    top:0;
-    left:0;
-    height: 100%;
-    width: 0;
-    background-color: beige;
-    animation: text_reveal_box 2s ease;
-    animation-delay:.3s;
-}
-#home h1:nth-child(1) span{
-    animation-delay: 1s;
-}
-#home h1:nth-child(2) span{
-    animation-delay: 2s;
-}
-#home h1:nth-child(3) span{
-    animation-delay: 3s;
-}
-
-#home .btn{
-    display: inline-block;
-    padding: 10px 20px;
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    margin-top: 36px;
-    transition: .5s ease; 
-    transition-property: background-color, color;
-}
-
-#home.btn:hover{
-    color: green; 
-    background-color: black;
-}
-
-@keyframes text_reveal_box{
-    50%{
-        width: 100%;
-        left:0;
-    }
-    100%{
-        width: 0;
-        left: 100%
-    }
-} */
-
-/* -------------------------------------------------------------------------- */
-
-/* about me styling start  */
-
-
-
-/* .about-card {
-    width: 550px;
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
-    border-radius: 5px;
-    text-align: center;
-
-  } */
-
-  .about-card img {
+.about-card img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -249,32 +69,23 @@ nav ul li a {
     margin: 0 auto;
   }
 
-  /* .about-card h1 {
-    font-size: 32px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-  } 
-  .about-card h2 {
-    font-size: 24px;
-    margin-top: 0;
+  .skills-title{
+    text-align: center;
+    font-size: 60px;
+    height: 100vh;
   }
 
-  .about-card p {
-    font-size: 17px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 32px;
-  } */
-/* about me styling ends */
+
+/* -------------------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------------------- */
  /* skills styling start  */
 
- .skills-title {
+ .skills-title{
     text-align: center;
     font-size: 50px;
-
+    height: 100vh;
 }
 
  /* skills styling end  */
@@ -287,6 +98,7 @@ projects styling start  */
 .projects-title{
     text-align: center;
     font-size: 60px;
+    height: 100vh;
 }
 
 .project-cards {
@@ -342,6 +154,7 @@ projects styling start  */
   .contact-section h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    height: 100vh;
   }
   
   .contact-section form {
