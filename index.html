@@ -9,15 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <head> 
-        <title>Night and Day Effect</title>
+    
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <!-- <button onclick="toggleMode()">Toggle Day/Night</button> -->
-
-     </head> 
-
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
 
     <title> Sophie's Portfolio </title>
 </head>
@@ -27,29 +22,29 @@
     <!-- navbar section starts  -->
 
     <nav class="navbar">
-        <a href="#homeid" class="logo"> Sophie <span> Delice</span></a>
+        <a href="#homeid" class="logo"> Sophie <span> Delice</span> </a>
         <div class="tab-links">
             <ul>
                 <li class="nav-item"><a href="#homeid"> Home</a></li>
                 <li><a href="#aboutid"> About </a></li>
-                <li><a href="#skillsid"> Skills </a></li>
-                <li><a href="#resumeid"> Resume </a></li>
+                <li><a  href="#skillsid"> Skills </a></li>
                 <li><a href="#projectsid"> Projects </a></li>
                 <li><a href="#contactid"> Contact Me</a></li>
             </ul>
         </div>
 
-        <div class ="button-con"> 
-            <label for="cb1"> 
-                <i class='bx bxs-moon' style='color:purple' id=" nightIcon"></i>
+        <div class="button-con">
+            <label for="cb1">
+                <!-- <img src="./svg/moon.svg" alt="" id="nightIcon" /> -->
+                <i class='bx bxs-moon' style='color:purple' id="nightIcon"></i>
             </label>
             <input type="checkbox" name="" id="cb1" class="toggle" />
             <label for="cb1" class="toggle-button"></label>
             <label for="cb1">
                 <i class='bx bxs-sun' style='color:#6d14bf' id="dayIcon"></i>
             </label>
+          </div>
 
-        </div>
     </nav>
 
     <!-- navbar section ends  -->
@@ -63,7 +58,7 @@
             <div class="home-text">
 
                 <h1> Hi, I am <span> Sophie <span></h1>
-                <p> Enthusiastic, full-stack software developer with a background in Education.
+                <p> Enthusiastic, Backend Developer with a background in Education.
                 <p>
 
                 <div class="home-icons">
@@ -96,7 +91,7 @@
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
 
-                    <img src="Pr.png"
+                    <img src=""
                         alt="Profile Picture">
                 </div>
             </div>
@@ -119,11 +114,15 @@
             <a><i class='bx bxl-mongodb' style='color:purple'></i> </a>
             <a><i class='bx bxl-jquery' style='color:purple'></i></a>
 
+            <div class="resumebtn">
+                <a href="https://docs.google.com/document/d/1jcJXZDqP9-VJYa2q6JdkmRIS6ms-D05UpjvvRPhiGww/edit?usp=sharing" target="_blank"  class="button"> <i class='bx bxs-download'> </i></i>Download Resume </a>
+            </div>
+
         </div>
 
-        <div class="resumebtn">
-            <a href="" class="button"> <i class='bx bxs-download'> </i></i>Download Resume </a>
-        </div>
+        <!-- <div class="resumebtn">
+            <a href="https://docs.google.com/document/d/1jcJXZDqP9-VJYa2q6JdkmRIS6ms-D05UpjvvRPhiGww/edit?usp=sharing" target="_blank"  class="button"> <i class='bx bxs-download'> </i></i>Download Resume </a>
+        </div> -->
 
 
     </section>
@@ -133,15 +132,6 @@
 
     <!-- ------------------------------------------------------------------------------------------------------------- -->
 
-    <!-- resume section starts -->
-
-    <section id="resumeid">
-        <h1 class="resume-title"> My <span>Resume</span> </h1>
-
-        <div class='resume-body'> </div>
-    </section>
-
-    <!-- resume section ends  -->
 
     <!-- ------------------------------------------------------------------------------------------------------------- -->
 

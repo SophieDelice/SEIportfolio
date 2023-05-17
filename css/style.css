@@ -4,24 +4,8 @@
   padding: 0;
 }
 
-.button-con{
-  cursor: default;
-  /* position: absolute; */
-  margin-right: 50px;
-}
-
-#dayIcon, 
-#nightIcon {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  top:-3px;
-  margin: 0 7px;
-
-}
-
-
 /* navbar styling start  */
+
 
 .navbar {
   display: flex;
@@ -91,7 +75,7 @@ navbar styling ends  */
 
 .home-text p{
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .home-icons i {
@@ -156,6 +140,10 @@ navbar styling ends  */
   padding: 40px;
 }
 
+#skillsid{
+  min-height:100vh;
+
+}
 .skills-icons {
   text-align: center;
 }
@@ -183,18 +171,6 @@ navbar styling ends  */
 /* skills styling end  */
 
 /* -------------------------------------------------------------------------- */
-
-/* resume styling starts  */
-
-.resume-title {
-  text-align: center;
-  font-size: 60px;
-  /* height: 100vh; */
-  padding: 40px;
-  min-height: 20vh;
-}
-
-/* resume styling ends */
 
 /* -------------------------------------------------------------------------- */
 
@@ -261,7 +237,6 @@ navbar styling ends  */
 
 .cards-icons {
   font-size: 55px;
-
 }
 
 /* projects styling ends  */
@@ -279,7 +254,7 @@ navbar styling ends  */
   box-shadow: 2px 1px 10px #ccc;
   border-radius: 30px;
   text-align: center;
-  box-shadow: 0 4px 8px 0 green(0, 0, 0, 0.9); */
+  box-shadow: 0 4px 8px 0 green(0, 0, 0, 0.9);
  }
 .contact-section h1 {
   margin-bottom: 20px;
@@ -327,6 +302,121 @@ navbar styling ends  */
 
 .contact-section button[type="submit"]:hover {
   background-color: purple;
-} */
+} 
 
 /* contact me styling end */
+
+/* -------------------------------------------------------------------------- */
+
+body {
+  background: black;
+  color:white;
+  transition: background-color 150ms ease-out;
+}
+
+ body #textchange {
+  background: black;
+  color:white;
+} 
+
+body.day-background {
+  background: white;
+  color: black;
+}
+
+body.day-background .logo{
+  background: white;
+  color: black;
+}
+
+body .logo{
+  color: white;
+}
+
+
+body.day-background .tab-links li a {
+  background: white;
+  color: black;
+}
+
+body .tab-links li a {
+  color: white;
+  background: black;
+}
+
+.button-con {
+  cursor: default;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  margin-left: -76px;
+  margin-top: -18px;
+}
+
+#dayIcon,
+#nightIcon {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  /* top: -3px; */
+  margin: 0 7px;
+  cursor: pointer;
+}
+.toggle {
+  display: none;
+}
+.toggle,
+.toggle::after,
+.toggle::before,
+.toggle *,
+.toggle *::after,
+.toggle *::before,
+.toggle + .toggle-button {
+  box-sizing: border-box;
+}
+.toggle::selection,
+.toggle::after::selection,
+.toggle::before::selection,
+.toggle *::selection,
+.toggle *::after::selection,
+.toggle *::before::selection,
+.toggle + .toggle-button::selection {
+  background: none;
+}
+
+.toggle + .toggle-button {
+  outline: none;
+  display: inline-block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid white;
+  user-select: none;
+}
+
+.toggle + .toggle-button::after,
+.toggle + .toggle-button::before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.toggle + .toggle-button::after {
+  left: 0;
+  background: purple;
+  border-radius: 1em;
+  transition: all 0.2s ease;
+}
+.toggle + .toggle-button::before {
+  display: none;
+}
+.toggle:checked + .toggle-button::after {
+  left: 50%;
+}
+.toggle + .toggle-button {
+  padding: 2px;
+  border: 2px solid purple;
+  border-radius: 2em;
+}

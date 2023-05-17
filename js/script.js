@@ -1,9 +1,13 @@
-// alert('js is loaded')
+//  alert('js is loaded')
 
-// Get the <body> element
-// var body = document.body;
 
-// // Function to toggle day and night modes
-// function toggleMode() {
-//   body.classList.toggle("night");
-// }
+const body = document.querySelector("body");
+const cb1 = document.getElementById("cb1");
+console.log(body)
+
+
+cb1.addEventListener("click", () => {
+ body.classList.toggle("day-background");
+ console.log("click")
+ });
+
