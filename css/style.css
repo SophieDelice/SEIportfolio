@@ -172,6 +172,13 @@ navbar styling ends  */
 
 /* -------------------------------------------------------------------------- */
 
+.resumebtn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px;
+  }
+
 /* -------------------------------------------------------------------------- */
 
 /* projects styling start  */
@@ -248,32 +255,35 @@ navbar styling ends  */
 /* projects styling ends  */
 /* -------------------------------------------------------------------------- */
 
-
-#contactid {
-  min-height: 100vh;
+.typeform{
+  padding: 60px;
 }
+
+/* #contactid {
+  min-height: 20px;
+} */
 
 .contact-title{
   text-align: center;
   font-size: 60px;
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .contact-section h1 {
   text-align: center;
   font-size: 60px;
-  padding: 40px;
+  padding: 30px;
 }
 
 .contact-section h2 {
   text-align: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 46px;
-  padding: 50px;
+  padding: 30px;
+  /* margin-bottom: 30px; */
   /* min-height: 80vh; */
 
 }
-
 
 /* -------------------------------------------------------------------------- */
 
@@ -388,4 +398,16 @@ body .tab-links li a {
   padding: 2px;
   border: 2px solid purple;
   border-radius: 2em;
+}
+
+/* -------------------------------------------------------------------------- */
+
+footer {
+  background-color: purple;
+  padding: 15px;
+}
+
+.footer-content p {
+  text-align: center;
+  font-size:26px
 }
