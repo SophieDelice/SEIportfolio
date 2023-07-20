@@ -30,7 +30,7 @@
 }
 
 .logo {
-  font-size: 50px;
+  font-size: 40px;
   color: black;
   font-weight: bold;
 }
@@ -65,7 +65,7 @@ navbar styling ends  */
 /* home styling starts  */
 
 .home-text {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -233,7 +233,7 @@ navbar styling ends  */
 }
 
 .card {
-  width: 30%;
+  width: 50%;
   margin-bottom: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
   transition: 0.3s;
@@ -263,6 +263,7 @@ navbar styling ends  */
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+
 }
 
 .button-wrapper a {
@@ -279,6 +280,8 @@ body.day-background .button-wrapper a {
 
 .button-wrapper a:hover {
   text-decoration: underline;
+  text-decoration-color: purple;
+  box-shadow: 0 10px 16px 0 purple;
 }
 /* projects styling ends  */
 /* -------------------------------------------------------------------------- */
@@ -287,14 +290,10 @@ body.day-background .button-wrapper a {
   padding: 60px;
 }
 
-/* #contactid {
-  min-height: 20px;
-} */
 
 .contact-title{
   text-align: center;
   font-size: 60px;
-  /* padding: 40px; */
 }
 
 .contact-section h1 {
@@ -305,12 +304,8 @@ body.day-background .button-wrapper a {
 
 .contact-section h2 {
   text-align: center;
-  /* margin-top: 20px; */
   font-size: 36px;
   padding: 30px;
-  /* margin-bottom: 30px; */
-  /* min-height: 80vh; */
-
 }
 
 /* -------------------------------------------------------------------------- */
@@ -360,7 +355,6 @@ body .tab-links li a {
   position: relative;
   width: 26px;
   height: 26px;
-  /* top: -3px; */
   margin: 0 7px;
   cursor: pointer;
 }
@@ -440,6 +434,40 @@ footer {
 
 /* Media Queries*/
 @media screen and  (max-width: 990px){
+
+  .logo {
+    font-size: 30px;
+  }
+  .home-text {
+    text-align: center;
+    min-height: 60vh;
+  }
+
+  .about-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+}
+.about-me p {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 9px;
+  padding-top: 3px;
+  min-height: 50vh;
+
+}
+.skills-title{
+  font-size: 30px;
+}
+
+.button{
+  font-size:20px;
+}
+
+.projects-title{
+  font-size: 30px;
+}
+
   .about-card{
     flex-direction: column;
   }
@@ -467,6 +495,17 @@ footer {
     width: 100%;
   }
 }
+.contact-section h1 {
+  font-size: 30px;
+}
+
+.contact-section h2 {
+  font-size: 25px;
+}
+
+.typeform{
+  padding: auto;
+}
 
 @media (max-width: 768px) {
   .navbar {
@@ -486,20 +525,4 @@ footer {
     font-size: 14px;
   }
 }
-
-/* .about-card {
-  flex-direction: column;
-  list-style: none;
-}
-
-.about-card img {
-  width: 100%;
-  height: auto;
-  padding: 5px;
-}
-
-.about-card p {
-  margin-right: 0;
-  padding: 20px; */
-/* } */
 
